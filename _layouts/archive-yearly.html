@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div id="posts">
+  <h1>duckdalbe {{ page.year }}</h1>
+  <ul class="posts">
+    {% for post in page.posts %}
+      {% include archive-yearly-post.html %}
+    {% endfor %}
+  </ul>
+
